@@ -53,8 +53,8 @@ void onNoteOff(byte channel, byte note, byte velocity) {
 
 void onControlChange(byte channel, byte control, byte value) {
 	
-	//can be extended to other messages -- if so globals need to be  
-	//added in globalvalues.h 
+	//can be extended to other messages -- if so globals 
+	//need to be added in main to accomodate
 	switch(control) {
 		case 1:
 			normalControl0 = normalizeControl(value);
