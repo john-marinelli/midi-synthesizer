@@ -25,7 +25,7 @@ float volumeEnvelope(bool envIsPlaying, bool &envOnBang, bool &envOffBang, elaps
 	}
 	else {
 		if (envElapsedTime <= releaseEnd) {
-			result = pow(((marker * (envElapsedTime / releaseEnd)) + 1), -10); // the value -8 has to rise and fall in tandem with the length of the release tail
+			result = pow(((marker * (envElapsedTime / releaseEnd)) + 1), -10); //-10 seems like a good value, but can be changed
 		}
 		else {
 			result = 0.0;
