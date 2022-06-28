@@ -3,7 +3,9 @@
 
 /* Simple (and not very sonically pleasing) single-pole filter.
    In the future, this will be extended or a new class will be
-   created for a better, resonant lowpass filter */
+   created for a better, resonant lowpass filter 
+   Credit to https://www.earlevel.com/main/2012/12/15/a-one-pole-filter 
+   Could be used somewhere else in the signal chain */
 
 #include <Arduino.h>
 #include <Audio.h>
