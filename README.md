@@ -14,3 +14,8 @@ The default buffer size is 128 samples, and the sample rate is around 44,100 Hz.
 
 Callbacks for CC, velocity and note messages are implemented to interact with filters, envelopes and waveforms.
 
+## platformIO 
+
+Instead of using the Arduino IDE, for modularity, intellisense and better compatibility with non-microcontroller projects, this program is being built with platformIO.
+
+To get started with platformIO and try out this project on your own microcontroller, visit https://platformio.org/ for instructions. 
