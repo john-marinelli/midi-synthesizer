@@ -16,6 +16,6 @@ Callbacks for CC, velocity and note messages are implemented to interact with fi
 
 ## platformIO 
 
-Instead of using the Arduino IDE, for modularity, intellisense and better compatibility with non-microcontroller projects, this program is being built with platformIO.
+Instead of using the Arduino IDE, for increased modularity, intellisense and better compatibility with non-microcontroller projects, this program is being built with platformIO.
 
 To get started with platformIO and try out this project on your own microcontroller, visit https://platformio.org/ for instructions. 
