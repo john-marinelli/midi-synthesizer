@@ -34,6 +34,8 @@ int16_t tempSample = 0;
 float normalControl0 = 10000;
 float normalControl1 = 0;
 
+int debugval = 0;
+
 OnePole *onePoleFilter = new OnePole();
 
 /*------------------------------------------------------*/
@@ -83,6 +85,10 @@ void setup() {
 
 void loop() {
 
+	debugval = analogRead(A11);
+
+	Serial.println(debugval);
+
 	usbMIDI.read();
 	//Set envelope once per buffer
 	envValue = volumeEnvelope(isPlaying, globalOnBang, globalOffBang, globalEnvTime, lastEnvValue);
@@ -94,7 +100,7 @@ void loop() {
 
 	for (byte i = 0; i < AUDIO_BLOCK_SAMPLES; i++) {
 		tempSample = nextSquareSample(globalFreq) * envValue;
-		buffer[i] = onePoleFilter->process(tempSample);
+		buffer[i] = tempSample - onePoleFilter->process(tempSample);
 	}
 
 	audio.playBuffer();
