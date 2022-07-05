@@ -30,7 +30,7 @@ protected:
 //Sets filter coefficients
 inline void OnePole::setFc(double Fc) {
 	b1 = exp(-2.0 * PI * Fc);
-	a0 = 1.0 - b1;
+	a0 = 1.0 + b1;
 }
 
 //Process per-sample 
