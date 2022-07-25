@@ -1,3 +1,5 @@
+*NO LONGER BEING ACTIVELY DEVELOPED* RfDesignONE is now the active repository for this project -- code is being preserved here for reference.
+
 # Teensy 3.2 MIDI Synthesizer
 
 This project is an exploration into DSP and synthesis from scratch. 
